@@ -31,5 +31,4 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://example.com"
 Repository = "https://github.com/glab-vbc/mitotic_chromosome_models_v2"

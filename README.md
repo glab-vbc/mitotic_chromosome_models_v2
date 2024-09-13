@@ -1,6 +1,6 @@
 # Polymer models of mitotic chromosomes, v2.0
 
-This repository contains the scripts generating polymer models of mitotic chromosomes published in the manuscript "Rules of engagement for condensins and cohesins guide mitotic chromosome formation" by Samejima, Gibcus et al (Mirny/Dekker/Goloborodko/Earnshaw labs) (https://www.biorxiv.org/content/10.1101/2024.04.18.590027v3).
+This repository contains the scripts that generate polymer models of mitotic chromosomes published in the manuscript "Rules of engagement for condensins and cohesins guide mitotic chromosome formation" by Samejima, Gibcus et al (Mirny/Dekker/Goloborodko/Earnshaw labs) ([bioRxiv](https://www.biorxiv.org/content/10.1101/2024.04.18.590027v3)).
 
 ## Installing dependencies.
 
@@ -13,7 +13,7 @@ The key requirements are:
 
 ## Running
 
-The key script hoomd_bottlebrush_universal_winding_invariant.py can be found in the src/ folder.
+The key script `hoomd_bottlebrush_universal_winding_invariant.py` can be found in the `src/` folder.
 To obtain the three published "flagship", run the following commands: 
 
 ### SMC3-CAPH-depleted (condensin II-only) mitotic chromosomes , t=30min

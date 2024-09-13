@@ -1,10 +1,24 @@
-# mitotic_chromosome_models_v2
-The scripts and an accompanying library generating polymer models of mitotic chromosomes.   
+# Polymer models of mitotic chromosomes, v2.0
 
+This repository contains the scripts generating polymer models of mitotic chromosomes published in the manuscript "Rules of engagement for condensins and cohesins guide mitotic chromosome formation" by Samejima, Gibcus et al (Mirny/Dekker/Goloborodko/Earnshaw labs) (https://www.biorxiv.org/content/10.1101/2024.04.18.590027v3).
 
-## SMC3-CAPH-depleted mitotic chromosomes, t=30min
+## Installing dependencies.
 
-bash```
+The dependencies are listed in ./requirement.txt.
+The key requirements are:
+- [looplib](https://github.com/open2c/looplib)
+- [polykit](https://github.com/open2c/polykit)
+- [hoomd](https://github.com/glotzerlab/hoomd-blue)
+- [gsd](https://github.com/glotzerlab/gsd)
+
+## Running
+
+The key script hoomd_bottlebrush_universal_winding_invariant.py can be found in the src/ folder.
+To obtain the three published "flagship", run the following commands: 
+
+### SMC3-CAPH-depleted (condensin II-only) mitotic chromosomes , t=30min
+
+```bash
 python ./hoomd_bottlebrush_universal_winding_invariant.py cylindrical_helix \
     --rep_A 3.0 \
     --n 500000 \
@@ -24,10 +38,9 @@ python ./hoomd_bottlebrush_universal_winding_invariant.py cylindrical_helix \
     --out_folder ../best_models/SMC3-CAPH/ 
 ```
 
+### SMC3-CAPH2-depleted (condensin I-only) mitotic chromosomes, t=30min
 
-## SMC3-CAPH2-depleted mitotic chromosomes, t=30min
-
-bash```
+```bash
 python ./hoomd_bottlebrush_universal_winding_invariant.py periodic \
     --rep_A 3.0 \
     --n 500000 \
@@ -44,9 +57,10 @@ python ./hoomd_bottlebrush_universal_winding_invariant.py periodic \
 ```
 
 
-## SMC3-depleted mitotic chromosomes, t=30min
+### SMC3-depleted (condensin I+II) mitotic chromosomes, t=30min
+Two set of parameters match the experimental Hi-C equally well:
 
-bash```
+```bash
 python ./hoomd_bottlebrush_universal_winding_invariant.py cylindrical_helix \
     --rep_A 3.0 \
     --n 500000 \
@@ -67,7 +81,9 @@ python ./hoomd_bottlebrush_universal_winding_invariant.py cylindrical_helix \
     --out_folder ../best_models/SMC3_v1/ 
 ```
 
-bash```
+or
+
+```bash
 python ./hoomd_bottlebrush_universal_winding_invariant.py cylindrical_helix \
     --rep_A 3.0 \
     --n 500000 \
@@ -87,3 +103,8 @@ python ./hoomd_bottlebrush_universal_winding_invariant.py cylindrical_helix \
     --replicate 0 \
     --out_folder ../best_models/SMC3_v2/ 
 ```
+
+## Pre-computed models.
+
+For your convinience, we also provide three randomly-generated replicates of each "flagship" model in folder ./best_models/
+

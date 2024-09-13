@@ -106,5 +106,6 @@ python ./hoomd_bottlebrush_universal_winding_invariant.py cylindrical_helix \
 
 ## Pre-computed models.
 
-For your convinience, we also provide three randomly-generated replicates of each "flagship" model in folder ./best_models/
+For your convinience, we also provide multiple randomly-generated replicates of each "flagship" model.
+These models are stored in the folder `./best_models/` in files named `last_frame.gsd`
 

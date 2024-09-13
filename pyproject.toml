@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mitotic-chromosome-models-v2"
+version = "2024.9.0"
+dependencies = [
+  "numpy",
+  "hoomd",
+  "gsd",
+  "looplib",
+  "polykit"
+]
+
+requires-python = ">=3.8"
+authors = [
+  {name = "Anton Goloborodko", email = "goloborodko.anton@gmail.com"},
+]
+
+maintainers = [
+  {name = "Anton Goloborodko", email = "goloborodko.anton@gmail.com"},
+]
+
+description = "The scripts to generate polymer models of mitotic chromosomes."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["polymer simulations", "hoomd", "genome models"]
+classifiers = [
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://example.com"
+Repository = "https://github.com/glab-vbc/mitotic_chromosome_models_v2"

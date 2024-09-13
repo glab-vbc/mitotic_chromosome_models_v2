@@ -1,3 +1,7 @@
+*/*/traj.gsd
+*/*/optimized.gsd
+*/*/out.log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

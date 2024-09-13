@@ -7,13 +7,7 @@ import types
 
 import numpy as np
 
-import hoomd
-import hoomd.md
-import hoomd.md.integrate
-import gsd
-import gsd.hoomd
-
-import shared_hoomd_poly
+# The libraries that depend on GPU are imported after the argument parsing
 
 print = functools.partial(print, flush=True)
 
@@ -197,6 +191,15 @@ linear_stretching.add_argument(
 
 
 args = parser.parse_args()
+
+import hoomd
+import hoomd.md
+import hoomd.md.integrate
+import gsd
+import gsd.hoomd
+
+import shared_hoomd_poly
+
 
 p = types.SimpleNamespace()
 p.BP_PP = 200
